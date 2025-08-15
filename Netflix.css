@@ -1,0 +1,133 @@
+/* Reset default margins and paddings */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Main section with zoom background effect */
+.main {
+    background-image: url("Backgroung image.png");
+    background-position: center center;
+    /* background-repeat: no-repeat; */
+    background-size: cover; /* keeps proportion */
+    background-attachment: fixed; /* makes it feel static */
+    height: 100vh;
+    position: relative;
+    /* animation: zoomIn 12s ease-in-out infinite alternate; */
+}
+
+/* Dark overlay box */
+.main .box {
+    height: 100%;
+    width: 100%;
+    opacity: 0.44;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+}
+
+/* Navigation bar */
+nav {
+    max-width: 60vw;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+nav img {
+    position: relative;
+    z-index: 10;
+    width: 120px;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Hero text container */
+.hero {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Text styling */
+#Text1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(28px, 5vw, 56px);
+    font-weight: 900;
+}
+
+#Text2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(14px, 2vw, 20px);
+    font-weight: 700;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+#Text3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(12px, 1.5vw, 16px);
+    font-weight: 500;
+    line-height: 1.5;
+    margin-top: 5px;
+}
+
+/* Email input */
+#Email {
+    margin-top: 20px;
+    padding: 12px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: none;
+    width: clamp(200px, 50%, 400px);
+}
+
+/* Background zoom animation */
+@keyframes zoomIn {
+    0% {
+        background-size: cover;
+    }
+    100% {
+        background-size: 110%;
+    }
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+    nav {
+        max-width: 90vw;
+    }
+}
+
+@media (max-width: 480px) {
+    nav img {
+        width: 90px;
+    }
+
+    nav button {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+}
