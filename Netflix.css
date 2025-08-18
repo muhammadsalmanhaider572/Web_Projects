@@ -14,7 +14,6 @@
     background-attachment: fixed; /* makes it feel static */
     height: 100vh;
     position: relative;
-    /* animation: zoomIn 12s ease-in-out infinite alternate; */
 }
 
 /* Dark overlay box */
