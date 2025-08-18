@@ -1,0 +1,27 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+#box{
+    border: 2px solid black;
+    width: 400px;
+    height: 100px;
+    background-color: blue;
+    color: white;
+}
+.heading{
+    color: red;
+}
+.color{
+    background-color: green;
+}
+#center{
+    text-align: center;
+    text-transform:capitalize ;
+    font-family: 'Times New Roman', Times, serif;
+}
+#outer{
+    font-size: 25px;
+}
+#inner{
+    font-size: 10px;
+}
