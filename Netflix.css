@@ -100,9 +100,10 @@ h2{
 .trending {
   display: flex;
   gap: 15px;
-  overflow-x: auto;
+  overflow-x: scroll;
   padding-bottom: 10px;
   margin-left: 10%;
+  margin-right: 10%;
 }
 
 .card {
@@ -176,45 +177,31 @@ h2{
   background: linear-gradient(to right, #ff004c, #001f4d);
 }
 
-.reasons {
-  padding: 40px 0;
-}
-
-.reasons h2 {
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
-.cards2 {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  
-}
-
 .card2 {
   background: linear-gradient(to bottom right, #9898c1, #000000);
-  padding: 30px;
-  border-radius: 10px;
-  flex: 1 1 calc(25% - 20px);
-  min-width: 210px;
-  flex-direction: row;
-   flex-wrap: nowrap;        /* prevents wrapping */
-  overflow-x: auto;         /* scrolls horizontally if needed */
-  gap: 20px;
-  padding-bottom: 20px;
-  position: relative;
   color: #fff;
+  display: inline-block;
+  height: 250px;
+  width: 250px;
+  margin-left: 10px;
+  border-radius: 10%;
+  padding: 10px;
+}
+.card2 {
+  position: relative;
+  flex: 0 0 auto;
+
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s;
 }
 
-.card2 h3 {
-  font-size: 18px;
-  margin-bottom: 10px;
+.card:hover {
+  transform: scale(1.08);
+
 }
 
-.card2 p {
-  font-size: 14px;
-}
+
 
 .icon {
   width: 30px;
@@ -243,21 +230,6 @@ h2{
 .kids-icon {
   background: purple;
   border-radius: 6px;
-}
-.card2 {
-  position: relative;
-  flex: 0 0 auto;
-  width: 80px;
-  height: 170px;
-  flex-direction: row;
-  border-radius: 8px;
-  overflow: hidden;
-  cursor: pointer;
-  transition: transform 0.3s;
-}
-
-.card2:hover {
-  transform: scale(1.08);
 }
 
 .faq {
