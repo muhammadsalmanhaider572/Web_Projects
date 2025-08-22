@@ -1,20 +1,22 @@
-div {
-    width: 300px;
-    height: 150px;
-    display: flex;
-    background-color: aqua;
-    align-items:center;
-    justify-content: center;
-    border: 5px solid black;
-    font-size: 15px;
-    transition:all 1s ease-in-out
+div{
+    width: 100px;
+    height: 100px;
+    border: 10px solid blue;
+    border-top:10px solid black ;
     
+    margin-left: 25%;
+    margin-top: 25%;
+    border-radius: 50%;
+    animation: loader 2s ease-in-out 0.1s infinite normal;
     
 }
 
-
-div:hover{
-    background-color: red;
-    color: aliceblue;
-    font-size: 40px;
+@keyframes loader {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+    
 }
