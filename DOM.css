@@ -1,0 +1,30 @@
+*{
+    background-color:cornflowerblue;
+}
+
+h1{
+    background-color: yellow;
+    width: 220px;
+}
+h2 , div{
+    background-color:aqua;
+    width: 150px;
+    height: 100px;
+    border: 2px solid black;
+}
+p{
+    background-color:bisque;
+    width: 400px;
+}
+
+button{
+    background-color:darkgoldenrod;
+
+}
+.class{
+    color: red;
+}
+.newclass{
+    background-color: green;
+}
+
