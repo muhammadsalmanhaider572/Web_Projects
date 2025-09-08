@@ -1,0 +1,264 @@
+* {
+    /* background-color: black; */
+    padding: 0;
+    margin: 0;
+}
+
+.main {
+    background-image: url("Backgroung\ image.png");
+    background-position: center center;
+    /* background-repeat: no-repeat; */
+    background-size: max(1200px, 100vw);
+    height: 100vh;
+    position: relative;
+    
+}
+
+.main .box {
+    height: 100vh;
+    width: 100%;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    background-color: black;
+}
+
+nav {
+    max-width: 80vw;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav img {
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+
+.hero {
+    height: calc(100% - 62px);
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    /* line-height: 2; */
+    top: -50px;
+    /* padding: 23px; */
+}
+
+#Text1 {
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    font-size: 56px;
+    font-weight: 900;
+    text-align: center;
+}
+
+#Text2 {
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 3;
+}
+
+#Text3 {
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 3;
+}
+
+.container {
+  padding: 20px;
+}
+
+h2{
+    color: #fff;
+     margin-left: 10%;
+     padding-bottom: 2%;
+}
+
+.trending {
+  display: flex;
+  gap: 15px;
+  overflow-x: scroll;
+  padding-bottom: 10px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.card {
+  position: relative;
+  flex: 0 0 auto;
+  width: 180px;
+  height: 270px;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.08);
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.number {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+}
+/* Email form */
+.email-form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.email-form input {
+  padding: 15px;
+  font-size: 1rem;
+  width: 300px;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  background-color: #222;
+}
+
+.email-form button {
+  padding: 15px 25px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #e50914;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.email-form button:hover {
+  background-color: #f40612;
+}
+/* 🔻 Separation Layer */
+.divider svg {
+  display: block;
+  width: 100%;
+  height: 30px;
+  height: 5px;
+  background: linear-gradient(to right, #ff004c, #001f4d);
+}
+
+.card2 {
+  background: linear-gradient(to bottom right, #9898c1, #000000);
+  color: #fff;
+  display: inline-block;
+  height: 250px;
+  width: 250px;
+  margin-left: 10px;
+  border-radius: 10%;
+  padding: 10px;
+}
+.card2 {
+  position: relative;
+  flex: 0 0 auto;
+
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.08);
+
+}
+
+
+
+.icon {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+/* Placeholder colored icons */
+.tv-icon {
+  background: red;
+  border-radius: 4px;
+}
+
+.download-icon {
+  background: pink;
+  border-radius: 50%;
+}
+
+.telescope-icon {
+  background: magenta;
+  border-radius: 10px;
+}
+
+.kids-icon {
+  background: purple;
+  border-radius: 6px;
+}
+
+.faq {
+  padding: 40px 0;
+}
+
+.faq h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.faq-item {
+  margin-bottom: 10px;
+}
+
+.faq-question {
+  width: 100%;
+  background-color: #333;
+  border: none;
+  color: #fff;
+  text-align: left;
+  padding: 20px;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.plus {
+  font-size: 24px;
+}

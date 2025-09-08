@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Happy Birthday Rida Fatime</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    background: #f78da7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+    color: white;
+  }
+
+  /* Cake container */
+  .cake-container {
+    position: relative;
+    width: 120px;
+    height: 150px;
+    margin-bottom: 30px;
+    animation: drop 1s ease forwards;
+    animation-delay: 0.5s;
+    transform: translateY(-200px);
+  }
+
+  @keyframes drop {
+    to {
+      transform: translateY(0);
+    }
+  }
+
+  /* Cake base */
+  .cake {
+    width: 120px;
+    height: 100px;
+    background: #fff0f5;
+    border-radius: 20px 20px 10px 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    position: relative;
+    border: 3px solid #e76f51;
+  }
+
+  /* Cake layers */
+  .cake-layer {
+    position: absolute;
+    width: 100%;
+    height: 25px;
+    background: #f4a261;
+    border-radius: 15px 15px 0 0;
+    border-bottom: 3px solid #e76f51;
+  }
+  .cake-layer:nth-child(1) {
+    top: 20px;
+  }
+  .cake-layer:nth-child(2) {
+    top: 50px;
+    background: #f4a261cc;
+  }
+  .cake-layer:nth-child(3) {
+    top: 75px;
+    background: #e76f51cc;
+  }
+
+  /* Candle */
+  .candle {
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 40px;
+    background: #2a9d8f;
+    border-radius: 3px;
+    box-shadow: 0 0 3px #2a9d8f;
+    animation: candleGlow 1.5s infinite alternate;
+  }
+
+  @keyframes candleGlow {
+    0% {
+      box-shadow: 0 0 6px 2px #ffba08;
+    }
+    100% {
+      box-shadow: 0 0 12px 6px #ffba08;
+    }
+  }
+
+  /* Flame */
+  .flame {
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 12px;
+    height: 20px;
+    background: radial-gradient(circle at 50% 30%, #ffba08 60%, transparent 70%);
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    animation: flicker 1s infinite;
+  }
+
+  @keyframes flicker {
+    0%, 100% {
+      transform: translateX(-50%) scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: translateX(-48%) scale(1.1);
+      opacity: 0.8;
+    }
+  }
+
+  /* Text animations */
+  h1, p {
+    opacity: 0;
+    animation: fadeIn 1.5s ease forwards;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    animation-delay: 2s;
+  }
+
+  p {
+    font-size: 1.8rem;
+    margin: 5px 0 0 0;
+    animation-delay: 2.5s;
+  }
+
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+</style>
+</head>
+<body>
+
+  <div class="cake-container">
+    <div class="cake">
+      <div class="cake-layer"></div>
+      <div class="cake-layer"></div>
+      <div class="cake-layer"></div>
+    </div>
+    <div class="candle"></div>
+    <div class="flame"></div>
+  </div>
+
+  <h1>Happy Birthday!</h1>
+  <p>Rida Fatima</p>
+  
+
+</body>
+</html>
